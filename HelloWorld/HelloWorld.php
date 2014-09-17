@@ -1,8 +1,8 @@
 <html>
 <head>
-    <title>HelloWorld</title>
+    <title></title>
 </head>
 <body>
-<?php echo '<p>Hello World</p>' ?>
+<?php echo '<p>Hello World PARA EL CAPULLO</p>' ?>
 </body>
 </html>
