@@ -3,14 +3,22 @@
     <title>Demostracion PHP</title>
 </head>
 <body>
-<table border="1">
+<table border="2">
 
 <?php	
 
-	// Numero de celdas recogido desde el formulario
-	$cantidad = $_POST["numero"];
+	// Numero de celdas recogido desde el formulario y comprueba que sea un numero de lo contrario saltara un error
+	$cantidad = "";
 
-	echo "<tr><td> Tabla </td></tr>";
+	if(is_numeric($_POST["numero"]) && $_POST["numero"] > 0){
+		$cantidad = $_POST["numero"];
+	}else{
+		echo "Debe insertar un numero mayor de 0";
+		$cantidad = 0;
+	}
+	
+
+	echo "<tr><td colspan = 10> Tabla </td></tr>";
 
 	for($i=1; $i <= $cantidad; $i++){
 
@@ -22,7 +30,7 @@
 			echo "</font></td>";
 			echo "<tr>";
 			echo "</tr>";
-			
+
 		} else {
 			
 			echo "<td>";
