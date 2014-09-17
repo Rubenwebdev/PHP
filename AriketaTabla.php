@@ -10,7 +10,7 @@
 
 	echo "<tr><td> Prueba Tabla </td></tr>";
 
-	for($i=1; $i <= 100; $i++){
+	for($i=1; $i <= 1000; $i++){
 
 		if($i % 10 == 0){
 			
