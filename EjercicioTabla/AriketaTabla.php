@@ -4,13 +4,14 @@
 </head>
 <body>
 <table border="1">
-<?php
-	
-	$i = 1;
 
-	echo "<tr><td> Prueba Tabla </td></tr>";
+<?php	
 
-	for($i=1; $i <= 1000; $i++){
+	$cantidad = $_GET["numero"];
+
+	echo "<tr><td> Tabla </td></tr>";
+
+	for($i=1; $i <= $cantidad; $i++){
 
 		if($i % 10 == 0){
 			
