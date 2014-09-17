@@ -7,7 +7,7 @@
 
 <?php	
 
-	$cantidad = $_GET["numero"];
+	$cantidad = $_POST["numero"];
 
 	echo "<tr><td> Tabla </td></tr>";
 

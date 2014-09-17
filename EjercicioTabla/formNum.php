@@ -1,7 +1,7 @@
 <html>
 <body>
 
-    Hello <?php echo $_GET["numero"]; ?>
+    Hello <?php echo $_POST["numero"]; ?>
 
 </body>
 </html>
